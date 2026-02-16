@@ -120,6 +120,16 @@
       .bg-column.active {
         clip-path: inset(0 0 0 0);
       }
+      /* Gradient Beam Button */
+      @keyframes spin-beam {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
       /* Border Gradient */
       [style*="--border-gradient"]::before {
         content: "";
@@ -214,15 +224,19 @@
             href="#"
             >Log in</a
           > -->
-          <button class="relative btn-beam-container group">
-            <div class="beam-border"></div>
-            <span
-              class="relative z-10 flex items-center gap-2 bg-neutral-900 text-white px-4 py-1.5 rounded-full text-xs font-medium border border-neutral-800 transition-all hover:bg-neutral-800"
-            >
-              Get Started
-              <i class="w-3 h-3" data-lucide="arrow-right"></i>
-            </span>
-          </button>
+          <a class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent py-2 px-4 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.4)]" href="#" style="--spread: 90deg; --shimmer-color: #a855f7; --speed: 3s; --cut: 1px;">
+            <!-- Rotating Border Gradient Beam -->
+            <div class="absolute inset-0 -z-20 overflow-hidden">
+              <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]">
+                <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+              </div>
+            </div>
+            <!-- Inner Background Cutout -->
+            <div class="absolute inset-[1px] -z-10 bg-neutral-950 transition-colors duration-300 group-hover:bg-neutral-900"></div>
+            <!-- Content -->
+            Cyberfusion
+            <i class="w-4 h-4" data-lucide="arrow-right"></i>
+          </a>
         </div>
       </div>
     </nav>
@@ -942,8 +956,8 @@
       <div
         class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"
       >
-        <div class="text-sm text-neutral-500">
-          © 2024 ACME Inc. All rights reserved.
+        <div class="text-sm text-neutral-500" id="year">
+          
         </div>
         <div class="flex gap-6 text-sm text-neutral-500">
           <a class="hover:text-white transition-colors" href="#">Privacy</a>
@@ -955,6 +969,7 @@
     </footer>
 
     <script>
+      document.getElementById("year").innerHTML = "© " + new Date().getFullYear() + " Deep Defense. Todos os direitos reservados.";
       // Initialize Lucide Icons
       lucide.createIcons();
 
