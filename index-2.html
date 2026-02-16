@@ -127,7 +127,8 @@
         inset: 0;
         padding: 1px;
         border-radius: var(--border-radius-before, inherit);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
           linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -170,12 +171,12 @@
               var i = document.createElement("script");
               ((i.src =
                 "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js"),
-              (i.onload = function () {
-                window.UnicornStudio.isInitialized ||
-                  (UnicornStudio.init(),
-                  (window.UnicornStudio.isInitialized = !0));
-              }),
-              (document.head || document.body).appendChild(i));
+                (i.onload = function () {
+                  window.UnicornStudio.isInitialized ||
+                    (UnicornStudio.init(),
+                    (window.UnicornStudio.isInitialized = !0));
+                }),
+                (document.head || document.body).appendChild(i));
             }
           })();
         </script>
@@ -208,11 +209,11 @@
           <a class="hover:text-white transition-colors" href="#">Pricing</a>
         </div>
         <div class="flex items-center gap-4">
-          <a
+          <!-- <a
             class="text-sm font-medium hover:text-white transition-colors"
             href="#"
             >Log in</a
-          >
+          > -->
           <button class="relative btn-beam-container group">
             <div class="beam-border"></div>
             <span
@@ -251,20 +252,30 @@
           </span>
           v2.0 is now available
         </div>
+        <!-- Logo -->
+        <div class="mb-10 animate-on-scroll" style="transition-delay: 50ms">
+          <img
+            src="assets/logo/logo_deep_white.svg"
+            alt="Logo"
+            class="h-16 md:h-20 lg:h-24 mx-auto"
+          />
+        </div>
+
         <h1
           class="text-5xl md:text-7xl font-medium text-white tracking-tight leading-[1.1] mb-8 h-auto min-h-[120px]"
           id="hero-title"
         >
           <!-- Text animated via JS -->
-          Building the future <br />
-          of digital interactions.
+          Segurança Cibernética, <br />
+          Integrada e Proativa.
         </h1>
         <p
           class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-on-scroll"
           style="transition-delay: 200ms"
         >
-          Seamlessly integrate advanced animations and interactions into your
-          workflow. Designed for speed, built for scale.
+          Fortaleça a segurança digital da sua empresa com uma plataforma
+          inteligente, modular e totalmente brasileira, que detecta e neutraliza
+          ameaças antes que causem impacto.
         </p>
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-on-scroll"
@@ -626,7 +637,9 @@
               >
                 <i class="w-5 h-5" data-lucide="code"></i>
               </div>
-              <h3 class="text-lg font-medium text-white mb-2">Developer First</h3>
+              <h3 class="text-lg font-medium text-white mb-2">
+                Developer First
+              </h3>
               <p class="text-sm text-neutral-500 leading-relaxed">
                 Built with an API-first approach for maximum flexibility.
               </p>
@@ -949,17 +962,36 @@
       const text = title.innerText;
       title.innerHTML = "";
       const chars = text.split("");
+      const wordToKeep = "Integrada";
+      const wordStart = text.indexOf(wordToKeep);
+      const wordEnd = wordStart >= 0 ? wordStart + wordToKeep.length : -1;
+      let wrapperSpan = null;
+
       chars.forEach((char, index) => {
         const span = document.createElement("span");
         span.textContent = char;
         span.className = "char";
         span.style.transitionDelay = `${index * 30}ms`;
         if (char === " ") span.style.marginRight = "0.3em";
-        title.appendChild(span);
+
+        if (index >= wordStart && index < wordEnd) {
+          if (!wrapperSpan) {
+            wrapperSpan = document.createElement("span");
+            wrapperSpan.className = "whitespace-nowrap";
+            wrapperSpan.style.display = "inline";
+            title.appendChild(wrapperSpan);
+          }
+          wrapperSpan.appendChild(span);
+        } else {
+          wrapperSpan = null;
+          title.appendChild(span);
+        }
       });
 
       setTimeout(() => {
-        document.querySelectorAll(".char").forEach((c) => c.classList.add("revealed"));
+        document
+          .querySelectorAll(".char")
+          .forEach((c) => c.classList.add("revealed"));
       }, 100);
 
       // --- 2. Background Clip Animation ---
@@ -973,9 +1005,12 @@
         bgGrid.appendChild(col);
 
         // Staggered animation
-        setTimeout(() => {
-          col.classList.add("active");
-        }, 100 + i * 100);
+        setTimeout(
+          () => {
+            col.classList.add("active");
+          },
+          100 + i * 100,
+        );
       }
 
       // --- 3. Scroll Animation Observer ---
