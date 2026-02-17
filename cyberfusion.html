@@ -368,7 +368,7 @@
     </section>
 
     <!-- Platform Overview Section -->
-    <section class="py-32 border-t border-neutral-900 relative" id="plataforma">
+    <section class="py-32 border-t bg-black/50 border-neutral-900 relative" id="plataforma">
       <div class="max-w-7xl mx-auto px-6">
         <div class="mb-16 max-w-3xl mx-auto text-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0s_both]">
           <p class="text-xs font-medium uppercase tracking-widest text-purple-400 mb-4">A Plataforma Cyberfusion</p>
@@ -418,6 +418,335 @@
       </div>
     </section>
 
+    <!-- Modules Integration Section -->
+    <section class="py-32 border-t border-neutral-900 relative overflow-hidden" id="modulos">
+      <!-- Background Glow -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none"></div>
+      
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Header -->
+        <div class="mb-16 max-w-3xl mx-auto text-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0s_both]">
+          <p class="text-xs font-medium uppercase tracking-widest text-purple-400 mb-4">Conheça Nossa Plataforma</p>
+          <h2 class="text-4xl lg:text-5xl font-normal text-white tracking-tight mb-6">
+            CYBER<span class="text-purple-400">FUSION</span>
+          </h2>
+          <p class="text-lg text-neutral-400 leading-relaxed">
+            Plataforma unificada que integra e automatiza toda a cadeia de valor da cibersegurança, com IA e LLM, para dar
+            mais visibilidade, resposta e conformidade ao seu ambiente de TI.
+          </p>
+        </div>
+
+        <!-- Integration Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.2s_both]">
+          
+          <!-- Left Side: Modules List with Connector -->
+          <div class="lg:col-span-5 flex flex-col gap-4 relative z-10">
+            <style>
+              @keyframes flow-purple {
+                from { stroke-dashoffset: 24; }
+                to { stroke-dashoffset: 0; }
+              }
+              .animate-flow-purple {
+                animation: flow-purple 1s linear infinite;
+              }
+              .module-btn {
+                transition: all 0.3s ease;
+              }
+              .module-btn.active {
+                background: linear-gradient(135deg, var(--purple-main), #7c3aed);
+                border-color: transparent;
+                box-shadow: 0 0 40px -10px rgba(168, 85, 247, 0.4);
+              }
+              .module-btn:not(.active):hover {
+                background: rgba(168, 85, 247, 0.1);
+                border-color: rgba(168, 85, 247, 0.3);
+              }
+            </style>
+
+            <!-- Module: CyberFusion Center -->
+            <button class="module-btn active w-full flex items-center justify-between p-5 rounded-xl border border-neutral-800 text-white group" id="btn-center" onclick="selectModule('center')">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
+                  <i class="w-5 h-5 text-purple-400" data-lucide="shield-check"></i>
+                </div>
+                <span class="text-lg font-medium">CyberFusion Center</span>
+              </div>
+              <i class="w-5 h-5 text-purple-400" data-lucide="chevron-right"></i>
+              <!-- Active Dot -->
+              <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full translate-x-1/2 ring-4 ring-neutral-950" id="module-active-dot"></div>
+            </button>
+
+            <!-- Module: CyberFusion Firewall -->
+            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-firewall" onclick="selectModule('firewall')">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="flame"></i>
+                </div>
+                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion Firewall</span>
+              </div>
+              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+            </button>
+
+            <!-- Module: CyberFusion Network Monitor -->
+            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-network" onclick="selectModule('network')">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="bar-chart-3"></i>
+                </div>
+                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion Network Monitor</span>
+              </div>
+              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+            </button>
+
+            <!-- Module: CyberFusion MAP -->
+            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-map" onclick="selectModule('map')">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
+                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="map"></i>
+                </div>
+                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion MAP</span>
+              </div>
+              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Connector Column (Visual Dashed Lines) -->
+          <div class="hidden lg:block lg:col-span-2 h-[400px] z-10 relative">
+            <svg class="w-full h-full absolute inset-0 overflow-visible" preserveAspectRatio="none" viewBox="0 0 200 400">
+              <!-- Active path: Center (Top) -->
+              <path class="animate-flow-purple" d="M-50 80 C 80 80, 80 200, 180 200 L 240 200" fill="none" id="path-center" stroke="#a855f7" stroke-dasharray="8 8" stroke-width="2"></path>
+              <!-- Inactive paths -->
+              <path class="opacity-20" d="M-50 160 C 80 160, 80 200, 180 200 L 240 200" fill="none" id="path-firewall" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
+              <path class="opacity-20" d="M-50 240 C 80 240, 80 200, 180 200 L 240 200" fill="none" id="path-network" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
+              <path class="opacity-20" d="M-50 320 C 80 320, 80 200, 180 200 L 240 200" fill="none" id="path-map" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
+              <!-- Active Arrowhead -->
+              <path d="M230 195 L 240 200 L 230 205" fill="none" stroke="#a855f7" stroke-width="2"></path>
+              <circle cx="240" cy="200" fill="#a855f7" r="3"></circle>
+            </svg>
+          </div>
+
+          <!-- Right Side: Details Card -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative w-full bg-neutral-900 rounded-[24px] p-[1px] overflow-hidden group">
+              <!-- Glowing Border Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-b from-purple-500 via-purple-600/50 to-transparent opacity-80 z-0"></div>
+              
+              <!-- Inner Card Content -->
+              <div class="relative z-10 bg-neutral-950 rounded-[23px] p-8 lg:p-10 flex flex-col">
+                <!-- Background Glow -->
+                <div class="absolute top-0 right-0 w-full h-40 bg-gradient-to-b from-purple-500/10 to-transparent pointer-events-none rounded-t-[23px]"></div>
+                
+                <!-- Card Header -->
+                <div class="flex items-center justify-between mb-4 relative z-10">
+                  <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center" id="module-icon-container">
+                      <i class="w-6 h-6 text-purple-400" data-lucide="shield-check" id="module-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-medium text-white" id="module-title">CyberFusion Center</h3>
+                  </div>
+                </div>
+
+                <!-- Subtitle -->
+                <p class="text-neutral-400 mb-8 text-sm leading-relaxed relative z-10" id="module-desc">
+                  SIEM, EDR, XDR e SOAR com IA e LLM para análises inteligentes e previsão de comportamento.
+                </p>
+
+                <!-- Features List -->
+                <div class="space-y-4 mb-8 relative z-10" id="module-features">
+                  <div class="flex items-center gap-3 group/item">
+                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    </div>
+                    <span class="text-white text-sm">Detecção avançada com Machine Learning</span>
+                  </div>
+                  <div class="flex items-center gap-3 group/item">
+                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    </div>
+                    <span class="text-white text-sm">Correlação de eventos em tempo real</span>
+                  </div>
+                  <div class="flex items-center gap-3 group/item">
+                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    </div>
+                    <span class="text-white text-sm">Resposta automatizada a incidentes</span>
+                  </div>
+                  <div class="flex items-center gap-3 group/item">
+                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    </div>
+                    <span class="text-white text-sm">Dashboard unificado de segurança</span>
+                  </div>
+                </div>
+
+                <!-- Action Button -->
+                <a
+                  href="#contato"
+                  class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-3 px-6 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.4)] w-full"
+                  style="--spread: 90deg; --shimmer-color: #a855f7; --speed: 3s"
+                >
+                  <div class="absolute inset-0 -z-20 overflow-hidden rounded-full">
+                    <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]">
+                      <div
+                        class="absolute inset-0"
+                        style="
+                          background: conic-gradient(
+                            from calc(270deg - (var(--spread) * 0.5)),
+                            transparent 0,
+                            var(--shimmer-color) var(--spread),
+                            transparent var(--spread)
+                          );
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="absolute inset-[1px] -z-10 bg-neutral-950 rounded-full transition-colors duration-300 group-hover:bg-purple-950/50"></div>
+                  <span id="module-cta-text">Conhecer o Center</span>
+                  <i class="w-4 h-4" data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function() {
+          const modules = {
+            center: {
+              title: "CyberFusion Center",
+              icon: "shield-check",
+              desc: "SIEM, EDR, XDR e SOAR com IA e LLM para análises inteligentes e previsão de comportamento.",
+              features: [
+                "Detecção avançada com Machine Learning",
+                "Correlação de eventos em tempo real",
+                "Resposta automatizada a incidentes",
+                "Dashboard unificado de segurança"
+              ],
+              cta: "Conhecer o Center"
+            },
+            firewall: {
+              title: "CyberFusion Firewall",
+              icon: "flame",
+              desc: "Firewall robusto com IDS/IPS e VPN, entregando proteção avançada com excelente custo-benefício.",
+              features: [
+                "Proteção de perímetro avançada",
+                "IDS/IPS integrado",
+                "VPN site-to-site e client-to-site",
+                "Regras dinâmicas baseadas em IA"
+              ],
+              cta: "Conhecer o Firewall"
+            },
+            network: {
+              title: "CyberFusion Network Monitor",
+              icon: "bar-chart-3",
+              desc: "Observabilidade completa com supervisão em tempo real e alertas inteligentes.",
+              features: [
+                "Monitoramento de rede 24/7",
+                "Análise de tráfego em tempo real",
+                "Alertas preditivos com IA",
+                "Relatórios detalhados de performance"
+              ],
+              cta: "Conhecer o Monitor"
+            },
+            map: {
+              title: "CyberFusion MAP",
+              icon: "map",
+              desc: "Monitora o perímetro externo e antecipa movimentos de atores maliciosos.",
+              features: [
+                "Mapeamento de superfície de ataque",
+                "Threat Intelligence em tempo real",
+                "Detecção de vazamentos de dados",
+                "Monitoramento da Dark Web"
+              ],
+              cta: "Conhecer o MAP"
+            }
+          };
+
+          const activeBtnClass = "module-btn active w-full flex items-center justify-between p-5 rounded-xl border border-transparent text-white group";
+          const inactiveBtnClass = "module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group";
+
+          window.selectModule = function(moduleKey) {
+            // Update buttons
+            ['center', 'firewall', 'network', 'map'].forEach(key => {
+              const btn = document.getElementById('btn-' + key);
+              const iconContainer = btn.querySelector('.w-10');
+              const icon = iconContainer.querySelector('[data-lucide]');
+              const text = btn.querySelector('span');
+              const chevron = btn.querySelectorAll('[data-lucide]')[1];
+
+              if (key === moduleKey) {
+                btn.className = activeBtnClass;
+                iconContainer.className = "w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center";
+                icon.className = "w-5 h-5 text-purple-400";
+                text.className = "text-lg font-medium";
+                chevron.className = "w-5 h-5 text-purple-400";
+                
+                // Move dot
+                const dot = document.getElementById('module-active-dot');
+                btn.appendChild(dot);
+              } else {
+                btn.className = inactiveBtnClass;
+                iconContainer.className = "w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors";
+                icon.className = "w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors";
+                text.className = "text-lg font-medium group-hover:text-white transition-colors";
+                chevron.className = "w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors";
+              }
+            });
+
+            // Update paths
+            ['center', 'firewall', 'network', 'map'].forEach(key => {
+              const path = document.getElementById('path-' + key);
+              if (key === moduleKey) {
+                path.setAttribute('stroke', '#a855f7');
+                path.setAttribute('class', 'animate-flow-purple');
+                path.setAttribute('stroke-dasharray', '8 8');
+              } else {
+                path.setAttribute('stroke', '#525252');
+                path.setAttribute('class', 'opacity-20');
+                path.setAttribute('stroke-dasharray', '6 6');
+              }
+            });
+
+            // Update card content
+            const data = modules[moduleKey];
+            const titleEl = document.getElementById('module-title');
+            const descEl = document.getElementById('module-desc');
+            const featuresEl = document.getElementById('module-features');
+            const ctaEl = document.getElementById('module-cta-text');
+
+            // Fade effect
+            const elements = [titleEl, descEl, featuresEl, ctaEl];
+            elements.forEach(el => {
+              el.style.opacity = '0';
+              el.style.transition = 'opacity 0.2s ease';
+            });
+
+            setTimeout(() => {
+              titleEl.textContent = data.title;
+              descEl.textContent = data.desc;
+              
+              featuresEl.innerHTML = data.features.map(feat => `
+                <div class="flex items-center gap-3 group/item">
+                  <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                    <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                  </div>
+                  <span class="text-white text-sm">${feat}</span>
+                </div>
+              `).join('');
+
+              ctaEl.textContent = data.cta;
+
+              // Re-init lucide icons
+              lucide.createIcons();
+
+              elements.forEach(el => el.style.opacity = '1');
+            }, 200);
+          }
+        })();
+      </script>
+    </section>
+
     <!-- Core Capabilities Section -->
     <section class="py-32 bg-black/50 relative" id="recursos">
       <div class="max-w-7xl mx-auto px-6">
@@ -428,53 +757,95 @@
           </p>
         </div>
 
-        <!-- 3-Column Floating Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Card 1: Detecção Avançada -->
+        <!-- 6-Card Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1: SOC-aaS + SIEM Integrado -->
           <div
-            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.1s_both]"
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.1s_both]"
           >
             <div
-              class="w-16 h-16 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="w-8 h-8" data-lucide="shield"></i>
+              <i class="w-7 h-7" data-lucide="monitor-check"></i>
             </div>
-            <h3 class="text-xl font-semibold text-white mb-4">Detecção Avançada de Ameaças</h3>
-            <p class="text-neutral-400 leading-relaxed">
-              Machine learning e análise comportamental para identificação de padrões anômalos e ameaças zero-day em
-              tempo real.
+            <h3 class="text-xl font-semibold text-white mb-3">SOC-aaS + SIEM Integrado</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Centro de operações de segurança como serviço com sistema de gerenciamento de eventos e informações integrado.
             </p>
           </div>
 
-          <!-- Card 2: Resposta Automatizada -->
+          <!-- Card 2: HYPER ATD/ATP + Threat Intelligence -->
           <div
-            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.2s_both]"
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.15s_both]"
           >
             <div
-              class="w-16 h-16 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="w-8 h-8" data-lucide="zap"></i>
+              <i class="w-7 h-7" data-lucide="zap"></i>
             </div>
-            <h3 class="text-xl font-semibold text-white mb-4">Resposta Automatizada</h3>
-            <p class="text-neutral-400 leading-relaxed">
-              Neutralização de ameaças em tempo real com playbooks automatizados e integração com ferramentas de
-              segurança existentes.
+            <h3 class="text-xl font-semibold text-white mb-3">HYPER ATD/ATP + Threat Intelligence</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Detecção avançada de ameaças com inteligência artificial e proteção em tempo real contra ataques sofisticados.
             </p>
           </div>
 
-          <!-- Card 3: Inteligência de Ameaças -->
+          <!-- Card 3: VA Discovery + LAM -->
           <div
-            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.3s_both]"
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.2s_both]"
           >
             <div
-              class="w-16 h-16 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
             >
-              <i class="w-8 h-8" data-lucide="brain"></i>
+              <i class="w-7 h-7" data-lucide="scan-eye"></i>
             </div>
-            <h3 class="text-xl font-semibold text-white mb-4">Inteligência de Ameaças</h3>
-            <p class="text-neutral-400 leading-relaxed">
-              Análise preditiva baseada em dados nacionais e internacionais com correlação de eventos e threat hunting
-              proativo.
+            <h3 class="text-xl font-semibold text-white mb-3">VA Discovery + LAM</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Avaliação de vulnerabilidades com descoberta automática de ativos e gerenciamento de logs centralizado.
+            </p>
+          </div>
+
+          <!-- Card 4: Blue Pool (WAF + AntiDDoS) -->
+          <div
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.25s_both]"
+          >
+            <div
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i class="w-7 h-7" data-lucide="shield-half"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Blue Pool (WAF + AntiDDoS)</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Proteção de aplicações web com firewall dedicado e mitigação contra ataques de negação de serviço distribuído.
+            </p>
+          </div>
+
+          <!-- Card 5: Enclave.agency (API) -->
+          <div
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.3s_both]"
+          >
+            <div
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i class="w-7 h-7" data-lucide="cpu"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Enclave.agency (API)</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Integração completa via API para automação de processos e gestão centralizada da infraestrutura de segurança.
+            </p>
+          </div>
+
+          <!-- Card 6: Armamento de Arquitetos + Portfolio -->
+          <div
+            class="floating-card p-8 bg-neutral-900/50 backdrop-blur-sm border border-neutral-800 rounded-2xl group animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.35s_both]"
+          >
+            <div
+              class="w-14 h-14 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform"
+            >
+              <i class="w-7 h-7" data-lucide="users"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">Armamento de Arquitetos + Portfolio</h3>
+            <p class="text-neutral-400 leading-relaxed text-sm">
+              Ferramentas especializadas para arquitetos de segurança com portfólio completo de soluções integradas.
             </p>
           </div>
         </div>
