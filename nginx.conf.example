@@ -1,0 +1,27 @@
+server {
+    listen 80;
+    server_name example.com;
+    root /var/www/site-deep;
+    index index.html;
+
+    # Clean URLs: try file, then directory index, then 404
+    location / {
+        try_files $uri $uri/ $uri.html =404;
+    }
+
+    # Remove .html extension with redirect
+    location ~ \.html$ {
+        rewrite ^(.+)\.html$ $1 permanent;
+    }
+
+    # Remove trailing slash (except root)
+    location ~ ^(.+)/$ {
+        rewrite ^(.+)/$ $1 permanent;
+    }
+
+    # Cache static assets
+    location /assets/ {
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+    }
+}
