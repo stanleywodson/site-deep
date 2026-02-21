@@ -6,6 +6,7 @@
     <script src="assets/resource_3fa48481346f.js"></script>
     <script src="assets/lucide_latest_2eebd0ebe8c2.js"></script>
     <script src="assets/iconify_654a1ef798a3.js"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/logo/logo_deep_white.svg" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="assets/css2_86e10c4bcbd4.css" rel="stylesheet" />
@@ -200,16 +201,9 @@
       <div
         class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
       >
-        <div
-          class="flex items-center gap-2 text-white tracking-tighter font-semibold text-lg"
-        >
-          <div
-            class="w-6 h-6 bg-white rounded-full flex items-center justify-center"
-          >
-            <div class="w-2 h-2 bg-black rounded-full"></div>
-          </div>
-          ACME
-        </div>
+        <a href="/" class="flex items-center">
+          <img src="assets/logo/logo_deep_white.svg" alt="Deep Defense" class="h-6" />
+        </a>
         <div
           class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400"
         >
@@ -314,7 +308,7 @@
     </header>
 
     <!-- Logo Marquee -->
-    <section
+    <!-- <section
       class="py-20 border-y border-neutral-900 bg-black/50 relative z-10"
     >
       <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
@@ -326,7 +320,6 @@
       </div>
       <div class="relative w-full overflow-hidden marquee-mask">
         <div class="flex marquee-content w-max">
-          <!-- Loop 1 -->
           <div
             class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
           >
@@ -352,7 +345,6 @@
               >QUASAR</span
             >
           </div>
-          <!-- Loop 2 (Duplicate) -->
           <div
             class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
           >
@@ -378,7 +370,6 @@
               >QUASAR</span
             >
           </div>
-          <!-- Loop 3 (Duplicate) -->
           <div
             class="flex items-center gap-16 px-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
           >
@@ -403,6 +394,102 @@
             <span class="text-xl font-semibold tracking-tighter text-white"
               >QUASAR</span
             >
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Quem Somos Section -->
+    <section class="py-32 bg-neutral-950">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Left: Illustration Card -->
+          <div class="animate-on-scroll">
+            <div
+              class="relative w-full aspect-square max-w-lg mx-auto rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 overflow-hidden flex items-center justify-center"
+            >
+              <!-- Background Grid -->
+              <div
+                class="absolute inset-0 opacity-10"
+                style="
+                  background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+                  background-size: 40px 40px;
+                "
+              ></div>
+              <!-- Glow -->
+              <div
+                class="absolute inset-0 flex items-center justify-center pointer-events-none"
+                style="background: radial-gradient(ellipse at center, rgba(248, 31, 93, 0.15), transparent 70%)"
+              ></div>
+              <!-- Shield Icon Composition -->
+              <div class="relative z-10 flex flex-col items-center gap-4">
+                <div class="relative">
+                  <i class="w-32 h-32 text-[#F81F5D]/80" data-lucide="shield"></i>
+                  <div class="absolute inset-0 flex items-center justify-center pt-2">
+                    <i class="w-14 h-14 text-[#F81F5D]/60" data-lucide="map-pin"></i>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3 mt-4">
+                  <div class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"></div>
+                  <span class="text-xs text-neutral-500 uppercase tracking-widest">Proteção Ativa</span>
+                  <div class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"></div>
+                </div>
+              </div>
+              <!-- Decorative sparkle -->
+              <div class="absolute bottom-6 right-6">
+                <i class="w-5 h-5 text-neutral-600" data-lucide="sparkles"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text Content -->
+          <div class="space-y-6">
+            <div class="animate-on-scroll">
+              <p class="text-xs font-medium uppercase tracking-widest text-[#F81F5D] mb-4">Quem Somos</p>
+              <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight leading-tight">
+                A <span class="text-[#F81F5D]">Deep Defense</span> é uma empresa brasileira de base tecnológica
+              </h2>
+            </div>
+            <div class="animate-on-scroll" style="transition-delay: 100ms">
+              <p class="text-neutral-400 leading-relaxed">
+                Especializada em <strong class="text-white">cibersegurança corporativa</strong>,
+                <strong class="text-white">ciberdefesa</strong> e
+                <strong class="text-white">inteligência cibernética</strong>.
+              </p>
+            </div>
+            <div class="animate-on-scroll" style="transition-delay: 200ms">
+              <p class="text-neutral-400 leading-relaxed">
+                Protegemos organizações públicas e privadas contra ameaças digitais complexas por
+                meio do <span class="text-[#F81F5D]">CyberFusion</span>, nossa plataforma integrada de
+                <strong class="text-white">monitoramento</strong>,
+                <strong class="text-white">detecção avançada</strong> e
+                <strong class="text-white">resposta automatizada</strong> em tempo real.
+              </p>
+            </div>
+            <div class="animate-on-scroll" style="transition-delay: 300ms">
+              <blockquote class="border-l-2 border-[#F81F5D] pl-5 py-2 text-neutral-300 leading-relaxed">
+                Desenvolvemos <strong class="text-white">tecnologia nacional de alto desempenho</strong> para
+                impulsionar uma transformação digital segura, com foco em
+                <strong class="text-white">inovação</strong>,
+                <strong class="text-white">eficiência</strong> e
+                <strong class="text-white">soberania cibernética</strong>.
+              </blockquote>
+            </div>
+            <div class="flex flex-wrap gap-4 pt-2 animate-on-scroll" style="transition-delay: 400ms">
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-medium transition-transform active:scale-95 hover:bg-neutral-200"
+              >
+                Parceiros
+              </a>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-neutral-700 text-neutral-300 text-sm font-medium hover:border-neutral-500 hover:text-white transition-colors"
+              >
+                Parceiros
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -967,6 +1054,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/5511999999999"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg shadow-green-500/25 transition-all duration-300 hover:scale-110"
+      aria-label="Fale conosco pelo WhatsApp"
+    >
+      <svg class="w-7 h-7 text-white fill-current" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
 
     <script>
       document.getElementById("year").innerHTML = "© " + new Date().getFullYear() + " Deep Defense. Todos os direitos reservados.";
