@@ -6,7 +6,11 @@
     <script src="assets/resource_3fa48481346f.js"></script>
     <script src="assets/lucide_latest_2eebd0ebe8c2.js"></script>
     <script src="assets/iconify_654a1ef798a3.js"></script>
-    <link rel="icon" type="image/svg+xml" href="assets/logo/logo_deep_white.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/logo/logo_deep_white.svg"
+    />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="assets/css2_86e10c4bcbd4.css" rel="stylesheet" />
@@ -202,15 +206,19 @@
         class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
       >
         <a href="/" class="flex items-center">
-          <img src="assets/logo/logo_deep_white.svg" alt="Deep Defense" class="h-6" />
+          <img
+            src="assets/logo/logo_deep_white.svg"
+            alt="Deep Defense"
+            class="h-6"
+          />
         </a>
         <div
           class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400"
         >
-          <a class="hover:text-white transition-colors" href="#">Product</a>
-          <a class="hover:text-white transition-colors" href="#">Solutions</a>
-          <a class="hover:text-white transition-colors" href="#">Enterprise</a>
-          <a class="hover:text-white transition-colors" href="#">Pricing</a>
+          <a class="hover:text-white transition-colors" href="#hero">Início</a>
+          <a class="hover:text-white transition-colors" href="#cyberfusion">Produto</a>
+          <a class="hover:text-white transition-colors" href="#sobre-nos">Sobre</a>
+          <a class="hover:text-white transition-colors" href="#parceiros">Parceiros</a>
         </div>
         <div class="flex items-center gap-4">
           <!-- <a
@@ -218,15 +226,38 @@
             href="#"
             >Log in</a
           > -->
-          <a class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent py-2 px-4 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.4)]" href="/cyberfusion" style="--spread: 90deg; --shimmer-color: #a855f7; --speed: 3s; --cut: 1px;">
+          <a
+            class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-none bg-transparent py-2 px-4 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.4)]"
+            href="/cyberfusion"
+            style="
+              --spread: 90deg;
+              --shimmer-color: #a855f7;
+              --speed: 3s;
+              --cut: 1px;
+            "
+          >
             <!-- Rotating Border Gradient Beam -->
             <div class="absolute inset-0 -z-20 overflow-hidden">
-              <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]">
-                <div class="absolute inset-0" style="background: conic-gradient(from calc(270deg - (var(--spread) * 0.5)), transparent 0, var(--shimmer-color) var(--spread), transparent var(--spread));"></div>
+              <div
+                class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]"
+              >
+                <div
+                  class="absolute inset-0"
+                  style="
+                    background: conic-gradient(
+                      from calc(270deg - (var(--spread) * 0.5)),
+                      transparent 0,
+                      var(--shimmer-color) var(--spread),
+                      transparent var(--spread)
+                    );
+                  "
+                ></div>
               </div>
             </div>
             <!-- Inner Background Cutout -->
-            <div class="absolute inset-[1px] -z-10 bg-neutral-950 transition-colors duration-300 group-hover:bg-neutral-900"></div>
+            <div
+              class="absolute inset-[1px] -z-10 bg-neutral-950 transition-colors duration-300 group-hover:bg-neutral-900"
+            ></div>
             <!-- Content -->
             Cyberfusion
             <i class="w-4 h-4" data-lucide="arrow-right"></i>
@@ -238,6 +269,7 @@
     <!-- Hero Section -->
     <header
       class="relative min-h-screen pt-32 pb-20 flex flex-col justify-center items-center overflow-hidden"
+      id="hero"
     >
       <!-- Background Clip Animation Grid -->
       <div
@@ -400,7 +432,7 @@
     </section> -->
 
     <!-- Quem Somos Section -->
-    <section class="py-32 bg-neutral-950">
+    <section class="py-32 bg-neutral-950" id="sobre-nos">
       <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <!-- Left: Illustration Card -->
@@ -412,28 +444,58 @@
               <div
                 class="absolute inset-0 opacity-10"
                 style="
-                  background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+                  background-image:
+                    linear-gradient(
+                      to right,
+                      rgba(255, 255, 255, 0.1) 1px,
+                      transparent 1px
+                    ),
+                    linear-gradient(
+                      to bottom,
+                      rgba(255, 255, 255, 0.1) 1px,
+                      transparent 1px
+                    );
                   background-size: 40px 40px;
                 "
               ></div>
               <!-- Glow -->
               <div
                 class="absolute inset-0 flex items-center justify-center pointer-events-none"
-                style="background: radial-gradient(ellipse at center, rgba(248, 31, 93, 0.15), transparent 70%)"
+                style="
+                  background: radial-gradient(
+                    ellipse at center,
+                    rgba(248, 31, 93, 0.15),
+                    transparent 70%
+                  );
+                "
               ></div>
               <!-- Shield Icon Composition -->
               <div class="relative z-10 flex flex-col items-center gap-4">
                 <div class="relative">
-                  <i class="w-32 h-32 text-[#F81F5D]/80" data-lucide="shield"></i>
-                  <div class="absolute inset-0 flex items-center justify-center pt-2">
-                    <i class="w-14 h-14 text-[#F81F5D]/60" data-lucide="map-pin"></i>
+                  <i
+                    class="w-32 h-32 text-[#F81F5D]/80"
+                    data-lucide="shield"
+                  ></i>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center pt-2"
+                  >
+                    <i
+                      class="w-14 h-14 text-[#F81F5D]/60"
+                      data-lucide="map-pin"
+                    ></i>
                   </div>
                 </div>
                 <div class="flex items-center gap-3 mt-4">
-                  <div class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"></div>
-                  <span class="text-xs text-neutral-500 uppercase tracking-widest">Proteção Ativa</span>
-                  <div class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"></div>
+                  <div
+                    class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"
+                  ></div>
+                  <span
+                    class="text-xs text-neutral-500 uppercase tracking-widest"
+                    >Proteção Ativa</span
+                  >
+                  <div
+                    class="w-2 h-2 rounded-full bg-[#F81F5D] animate-pulse"
+                  ></div>
                 </div>
               </div>
               <!-- Decorative sparkle -->
@@ -446,37 +508,56 @@
           <!-- Right: Text Content -->
           <div class="space-y-6">
             <div class="animate-on-scroll">
-              <p class="text-xs font-medium uppercase tracking-widest text-[#F81F5D] mb-4">Quem Somos</p>
-              <h2 class="text-3xl md:text-4xl font-medium text-white tracking-tight leading-tight">
-                A <span class="text-[#F81F5D]">Deep Defense</span> é uma empresa brasileira de base tecnológica
+              <p
+                class="text-xs font-medium uppercase tracking-widest text-[#F81F5D] mb-4"
+              >
+                Quem Somos
+              </p>
+              <h2
+                class="text-3xl md:text-4xl font-medium text-white tracking-tight leading-tight"
+              >
+                A <span class="text-[#F81F5D]">Deep Defense</span> é uma empresa
+                brasileira de base tecnológica
               </h2>
             </div>
             <div class="animate-on-scroll" style="transition-delay: 100ms">
               <p class="text-neutral-400 leading-relaxed">
-                Especializada em <strong class="text-white">cibersegurança corporativa</strong>,
+                Especializada em
+                <strong class="text-white">cibersegurança corporativa</strong>,
                 <strong class="text-white">ciberdefesa</strong> e
                 <strong class="text-white">inteligência cibernética</strong>.
               </p>
             </div>
             <div class="animate-on-scroll" style="transition-delay: 200ms">
               <p class="text-neutral-400 leading-relaxed">
-                Protegemos organizações públicas e privadas contra ameaças digitais complexas por
-                meio do <span class="text-[#F81F5D]">CyberFusion</span>, nossa plataforma integrada de
+                Protegemos organizações públicas e privadas contra ameaças
+                digitais complexas por meio do
+                <span class="text-[#F81F5D]">CyberFusion</span>, nossa
+                plataforma integrada de
                 <strong class="text-white">monitoramento</strong>,
                 <strong class="text-white">detecção avançada</strong> e
-                <strong class="text-white">resposta automatizada</strong> em tempo real.
+                <strong class="text-white">resposta automatizada</strong> em
+                tempo real.
               </p>
             </div>
             <div class="animate-on-scroll" style="transition-delay: 300ms">
-              <blockquote class="border-l-2 border-[#F81F5D] pl-5 py-2 text-neutral-300 leading-relaxed">
-                Desenvolvemos <strong class="text-white">tecnologia nacional de alto desempenho</strong> para
-                impulsionar uma transformação digital segura, com foco em
+              <blockquote
+                class="border-l-2 border-[#F81F5D] pl-5 py-2 text-neutral-300 leading-relaxed"
+              >
+                Desenvolvemos
+                <strong class="text-white"
+                  >tecnologia nacional de alto desempenho</strong
+                >
+                para impulsionar uma transformação digital segura, com foco em
                 <strong class="text-white">inovação</strong>,
                 <strong class="text-white">eficiência</strong> e
                 <strong class="text-white">soberania cibernética</strong>.
               </blockquote>
             </div>
-            <div class="flex flex-wrap gap-4 pt-2 animate-on-scroll" style="transition-delay: 400ms">
+            <div
+              class="flex flex-wrap gap-4 pt-2 animate-on-scroll"
+              style="transition-delay: 400ms"
+            >
               <a
                 href="#"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black text-sm font-medium transition-transform active:scale-95 hover:bg-neutral-200"
@@ -498,185 +579,216 @@
     <!-- Feature Section -->
     <section class="py-32">
       <div class="max-w-7xl mx-auto px-6">
-      <div class="grid lg:grid-cols-2 gap-16 items-center">
-        <div class="space-y-8">
-          <div class="animate-on-scroll">
-            <h2
-              class="text-3xl md:text-4xl font-medium text-white tracking-tight mb-4"
-            >
-              Cibersegurança Corporativa Brasileira
-            </h2>
-            <p class="text-lg text-neutral-400">
-              Protegemos organizações públicas e privadas contra ameaças digitais complexas
-              por meio do Cyberfusion, nossa plataforma integrada de monitoramento, detecção
-              avançada e resposta automatizada.
-            </p>
-          </div>
-          <div class="space-y-4">
-            <div
-              class="feature-btn p-4 rounded-xl border border-neutral-800 bg-neutral-900/30 cursor-pointer hover:bg-neutral-900 transition-colors active-feature"
-              onclick="rotateTo(0)"
-            >
-              <div class="flex items-center gap-3 mb-2">
-                <i class="text-white w-5 h-5" data-lucide="zap"></i>
-                <h3 class="text-white font-medium">Monitoramento em Tempo Real</h3>
-              </div>
-              <p class="text-sm text-neutral-500 pl-8">
-                Detecção avançada e resposta automatizada contra ameaças digitais complexas.
-              </p>
-            </div>
-            <div
-              class="feature-btn p-4 rounded-xl border border-transparent hover:bg-neutral-900 transition-colors cursor-pointer"
-              onclick="rotateTo(1)"
-            >
-              <div class="flex items-center gap-3 mb-2">
-                <i class="text-neutral-400 w-5 h-5" data-lucide="shield"></i>
-                <h3 class="text-neutral-300 font-medium">Tecnologia Nacional</h3>
-              </div>
-              <p class="text-sm text-neutral-500 pl-8">
-                Desenvolvida no Brasil com foco em soberania cibernética e inovação.
-              </p>
-            </div>
-            <div
-              class="feature-btn p-4 rounded-xl border border-transparent hover:bg-neutral-900 transition-colors cursor-pointer"
-              onclick="rotateTo(2)"
-            >
-              <div class="flex items-center gap-3 mb-2">
-                <i class="text-neutral-400 w-5 h-5" data-lucide="bar-chart"></i>
-                <h3 class="text-neutral-300 font-medium">Ciberdefesa Integrada</h3>
-              </div>
-              <p class="text-sm text-neutral-500 pl-8">
-                Plataforma Cyberfusion para transformação digital segura e eficiente.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Rotator Card -->
-        <div
-          class="relative h-[400px] w-full bg-neutral-900/20 rounded-2xl border border-neutral-800 overflow-hidden animate-on-scroll"
-        >
-          <div class="absolute inset-0 w-full h-full p-8" id="card-stack">
-            <!-- Card 1 - Monitoramento em Tempo Real -->
-            <div
-              class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
-              style="opacity: 1; transform: scale(1) translateZ(0)"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4"
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div class="animate-on-scroll">
+              <h2
+                class="text-3xl md:text-4xl font-medium text-white tracking-tight mb-4"
               >
-                <i class="w-6 h-6" data-lucide="zap"></i>
-              </div>
-              <div class="space-y-2">
-                <div class="h-2 w-2/3 bg-neutral-700 rounded"></div>
-                <div class="h-2 w-1/2 bg-neutral-700 rounded"></div>
-                <div class="h-2 w-3/4 bg-neutral-700 rounded"></div>
+                Cibersegurança Corporativa Brasileira
+              </h2>
+              <p class="text-lg text-neutral-400">
+                Protegemos organizações públicas e privadas contra ameaças
+                digitais complexas por meio do Cyberfusion, nossa plataforma
+                integrada de monitoramento, detecção avançada e resposta
+                automatizada.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="feature-btn p-4 rounded-xl border border-neutral-800 bg-neutral-900/30 cursor-pointer hover:bg-neutral-900 transition-colors active-feature"
+                onclick="rotateTo(0)"
+              >
+                <div class="flex items-center gap-3 mb-2">
+                  <i class="text-white w-5 h-5" data-lucide="zap"></i>
+                  <h3 class="text-white font-medium">
+                    Monitoramento em Tempo Real
+                  </h3>
+                </div>
+                <p class="text-sm text-neutral-500 pl-8">
+                  Detecção avançada e resposta automatizada contra ameaças
+                  digitais complexas.
+                </p>
               </div>
               <div
-                class="mt-8 p-4 bg-neutral-800/50 rounded-lg border border-neutral-700/50"
+                class="feature-btn p-4 rounded-xl border border-transparent hover:bg-neutral-900 transition-colors cursor-pointer"
+                onclick="rotateTo(1)"
+              >
+                <div class="flex items-center gap-3 mb-2">
+                  <i class="text-neutral-400 w-5 h-5" data-lucide="shield"></i>
+                  <h3 class="text-neutral-300 font-medium">
+                    Tecnologia Nacional
+                  </h3>
+                </div>
+                <p class="text-sm text-neutral-500 pl-8">
+                  Desenvolvida no Brasil com foco em soberania cibernética e
+                  inovação.
+                </p>
+              </div>
+              <div
+                class="feature-btn p-4 rounded-xl border border-transparent hover:bg-neutral-900 transition-colors cursor-pointer"
+                onclick="rotateTo(2)"
+              >
+                <div class="flex items-center gap-3 mb-2">
+                  <i
+                    class="text-neutral-400 w-5 h-5"
+                    data-lucide="bar-chart"
+                  ></i>
+                  <h3 class="text-neutral-300 font-medium">
+                    Ciberdefesa Integrada
+                  </h3>
+                </div>
+                <p class="text-sm text-neutral-500 pl-8">
+                  Plataforma Cyberfusion para transformação digital segura e
+                  eficiente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Rotator Card -->
+          <div
+            class="relative h-[400px] w-full bg-neutral-900/20 rounded-2xl border border-neutral-800 overflow-hidden animate-on-scroll"
+          >
+            <div class="absolute inset-0 w-full h-full p-8" id="card-stack">
+              <!-- Card 1 - Monitoramento em Tempo Real -->
+              <div
+                class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
+                style="opacity: 1; transform: scale(1) translateZ(0)"
               >
                 <div
-                  class="flex items-center justify-between text-xs text-neutral-400"
+                  class="w-12 h-12 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 mb-4"
                 >
-                  <span>Status de Monitoramento</span>
-                  <span class="text-green-400">Ativo</span>
+                  <i class="w-6 h-6" data-lucide="zap"></i>
+                </div>
+                <div class="space-y-2">
+                  <div class="h-2 w-2/3 bg-neutral-700 rounded"></div>
+                  <div class="h-2 w-1/2 bg-neutral-700 rounded"></div>
+                  <div class="h-2 w-3/4 bg-neutral-700 rounded"></div>
+                </div>
+                <div
+                  class="mt-8 p-4 bg-neutral-800/50 rounded-lg border border-neutral-700/50"
+                >
+                  <div
+                    class="flex items-center justify-between text-xs text-neutral-400"
+                  >
+                    <span>Status de Monitoramento</span>
+                    <span class="text-green-400">Ativo</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 - Tecnologia Nacional -->
+              <div
+                class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
+                style="opacity: 0; transform: scale(0.9) translateZ(0)"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4"
+                >
+                  <i class="w-6 h-6" data-lucide="shield"></i>
+                </div>
+                <div class="flex items-center justify-center h-32">
+                  <i class="w-16 h-16 text-neutral-700" data-lucide="flag"></i>
+                </div>
+                <div
+                  class="mt-4 text-center text-xs text-emerald-500 bg-emerald-900/20 py-2 rounded border border-emerald-900/50"
+                >
+                  Soberania Cibernética Garantida
+                </div>
+              </div>
+              <!-- Card 3 - Ciberdefesa Integrada -->
+              <div
+                class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
+                style="opacity: 0; transform: scale(0.9) translateZ(0)"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 mb-4"
+                >
+                  <i class="w-6 h-6" data-lucide="bar-chart"></i>
+                </div>
+                <div
+                  class="flex items-end justify-between h-32 gap-2 px-4 pb-4"
+                >
+                  <div
+                    class="w-full bg-neutral-700 rounded-t"
+                    style="height: 40%"
+                  ></div>
+                  <div
+                    class="w-full bg-neutral-600 rounded-t"
+                    style="height: 70%"
+                  ></div>
+                  <div
+                    class="w-full bg-orange-500 rounded-t"
+                    style="height: 55%"
+                  ></div>
+                  <div
+                    class="w-full bg-neutral-700 rounded-t"
+                    style="height: 80%"
+                  ></div>
                 </div>
               </div>
             </div>
-            <!-- Card 2 - Tecnologia Nacional -->
-            <div
-              class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
-              style="opacity: 0; transform: scale(0.9) translateZ(0)"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4"
+            <!-- Controls -->
+            <div class="absolute bottom-4 right-4 flex gap-2 z-20">
+              <button
+                class="p-2 rounded-full bg-neutral-800 text-white hover:bg-neutral-700 border border-neutral-700 transition-colors"
+                onclick="prevCard()"
               >
-                <i class="w-6 h-6" data-lucide="shield"></i>
-              </div>
-              <div class="flex items-center justify-center h-32">
-                <i class="w-16 h-16 text-neutral-700" data-lucide="flag"></i>
-              </div>
-              <div
-                class="mt-4 text-center text-xs text-emerald-500 bg-emerald-900/20 py-2 rounded border border-emerald-900/50"
+                <i class="w-4 h-4" data-lucide="chevron-left"></i>
+              </button>
+              <button
+                class="p-2 rounded-full bg-neutral-800 text-white hover:bg-neutral-700 border border-neutral-700 transition-colors"
+                onclick="nextCard()"
               >
-                Soberania Cibernética Garantida
-              </div>
+                <i class="w-4 h-4" data-lucide="chevron-right"></i>
+              </button>
             </div>
-            <!-- Card 3 - Ciberdefesa Integrada -->
-            <div
-              class="rotator-card bg-gradient-to-br from-neutral-800 to-black rounded-xl border border-neutral-700 p-6 shadow-2xl flex flex-col justify-between absolute inset-0 m-8 transition-all duration-600"
-              style="opacity: 0; transform: scale(0.9) translateZ(0)"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-orange-500/20 flex items-center justify-center text-orange-400 mb-4"
-              >
-                <i class="w-6 h-6" data-lucide="bar-chart"></i>
-              </div>
-              <div class="flex items-end justify-between h-32 gap-2 px-4 pb-4">
-                <div
-                  class="w-full bg-neutral-700 rounded-t"
-                  style="height: 40%"
-                ></div>
-                <div
-                  class="w-full bg-neutral-600 rounded-t"
-                  style="height: 70%"
-                ></div>
-                <div
-                  class="w-full bg-orange-500 rounded-t"
-                  style="height: 55%"
-                ></div>
-                <div
-                  class="w-full bg-neutral-700 rounded-t"
-                  style="height: 80%"
-                ></div>
-              </div>
-            </div>
-          </div>
-          <!-- Controls -->
-          <div class="absolute bottom-4 right-4 flex gap-2 z-20">
-            <button
-              class="p-2 rounded-full bg-neutral-800 text-white hover:bg-neutral-700 border border-neutral-700 transition-colors"
-              onclick="prevCard()"
-            >
-              <i class="w-4 h-4" data-lucide="chevron-left"></i>
-            </button>
-            <button
-              class="p-2 rounded-full bg-neutral-800 text-white hover:bg-neutral-700 border border-neutral-700 transition-colors"
-              onclick="nextCard()"
-            >
-              <i class="w-4 h-4" data-lucide="chevron-right"></i>
-            </button>
           </div>
         </div>
       </div>
-      </div>
     </section>
 
-    <section class="py-32 bg-neutral-950 relative overflow-hidden">
+    <section class="py-32 bg-neutral-950 relative overflow-hidden" id="cyberfusion">
       <!-- Background Glow -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none"></div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none"
+      ></div>
 
       <div class="max-w-7xl mx-auto px-6">
         <!-- Header -->
-        <div class="mb-16 max-w-3xl mx-auto text-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0s_both]">
-          <p class="text-xs font-medium uppercase tracking-widest text-purple-400 mb-4">Conheça Nossa Plataforma</p>
-          <h2 class="text-4xl lg:text-5xl font-normal text-white tracking-tight mb-6">
+        <div
+          class="mb-16 max-w-3xl mx-auto text-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0s_both]"
+        >
+          <p
+            class="text-xs font-medium uppercase tracking-widest text-purple-400 mb-4"
+          >
+            Conheça Nossa Plataforma
+          </p>
+          <h2
+            class="text-4xl lg:text-5xl font-normal text-white tracking-tight mb-6"
+          >
             CYBER<span class="text-purple-400">FUSION</span>
           </h2>
           <p class="text-lg text-neutral-400 leading-relaxed">
-            Plataforma unificada que integra e automatiza toda a cadeia de valor da cibersegurança, com IA e LLM, para dar
-            mais visibilidade, resposta e conformidade ao seu ambiente de TI.
+            Plataforma unificada que integra e automatiza toda a cadeia de valor
+            da cibersegurança, com IA e LLM, para dar mais visibilidade,
+            resposta e conformidade ao seu ambiente de TI.
           </p>
         </div>
 
         <!-- Integration Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.2s_both]">
-
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-on-scroll [animation:fadeSlideIn_0.8s_ease-out_0.2s_both]"
+        >
           <!-- Left Side: Modules List with Connector -->
           <div class="lg:col-span-5 flex flex-col gap-4 relative z-10">
             <style>
               @keyframes flow-purple {
-                from { stroke-dashoffset: 24; }
-                to { stroke-dashoffset: 0; }
+                from {
+                  stroke-dashoffset: 24;
+                }
+                to {
+                  stroke-dashoffset: 0;
+                }
               }
               .animate-flow-purple {
                 animation: flow-purple 1s linear infinite;
@@ -685,7 +797,11 @@
                 transition: all 0.3s ease;
               }
               .module-btn.active {
-                background: linear-gradient(90deg, #a855f7 0%, #7c3aed 100%) !important;
+                background: linear-gradient(
+                  90deg,
+                  #a855f7 0%,
+                  #7c3aed 100%
+                ) !important;
                 border-color: rgba(192, 132, 252, 0.35) !important;
                 box-shadow: 0 0 40px -10px rgba(168, 85, 247, 0.5);
               }
@@ -696,118 +812,273 @@
             </style>
 
             <!-- Module: CyberFusion Center -->
-            <button class="module-btn active w-full flex items-center justify-between p-5 rounded-xl border border-neutral-800 text-white group" id="btn-center" onclick="selectModule('center')">
+            <button
+              class="module-btn active w-full flex items-center justify-between p-5 rounded-xl border border-neutral-800 text-white group"
+              id="btn-center"
+              onclick="selectModule('center')"
+            >
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center">
-                  <i class="w-5 h-5 text-purple-400" data-lucide="shield-check"></i>
+                <div
+                  class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center"
+                >
+                  <i
+                    class="w-5 h-5 text-purple-400"
+                    data-lucide="shield-check"
+                  ></i>
                 </div>
                 <span class="text-lg font-medium">CyberFusion Center</span>
               </div>
-              <i class="w-5 h-5 text-purple-400" data-lucide="chevron-right"></i>
+              <i
+                class="w-5 h-5 text-purple-400"
+                data-lucide="chevron-right"
+              ></i>
               <!-- Active Dot -->
-              <div class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full translate-x-1/2 ring-4 ring-neutral-950" id="module-active-dot"></div>
+              <div
+                class="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 w-3 h-3 bg-purple-500 rounded-full translate-x-1/2 ring-4 ring-neutral-950"
+                id="module-active-dot"
+              ></div>
             </button>
 
             <!-- Module: CyberFusion Firewall -->
-            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-firewall" onclick="selectModule('firewall')">
+            <button
+              class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group"
+              id="btn-firewall"
+              onclick="selectModule('firewall')"
+            >
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
-                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="flame"></i>
+                <div
+                  class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors"
+                >
+                  <i
+                    class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors"
+                    data-lucide="flame"
+                  ></i>
                 </div>
-                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion Firewall</span>
+                <span
+                  class="text-lg font-medium group-hover:text-white transition-colors"
+                  >CyberFusion Firewall</span
+                >
               </div>
-              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+              <i
+                class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors"
+                data-lucide="chevron-right"
+              ></i>
             </button>
 
             <!-- Module: CyberFusion Network Monitor -->
-            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-network" onclick="selectModule('network')">
+            <button
+              class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group"
+              id="btn-network"
+              onclick="selectModule('network')"
+            >
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
-                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="bar-chart-3"></i>
+                <div
+                  class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors"
+                >
+                  <i
+                    class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors"
+                    data-lucide="bar-chart-3"
+                  ></i>
                 </div>
-                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion Network Monitor</span>
+                <span
+                  class="text-lg font-medium group-hover:text-white transition-colors"
+                  >CyberFusion Network Monitor</span
+                >
               </div>
-              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+              <i
+                class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors"
+                data-lucide="chevron-right"
+              ></i>
             </button>
 
             <!-- Module: CyberFusion MAP -->
-            <button class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group" id="btn-map" onclick="selectModule('map')">
+            <button
+              class="module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group"
+              id="btn-map"
+              onclick="selectModule('map')"
+            >
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors">
-                  <i class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors" data-lucide="map"></i>
+                <div
+                  class="w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors"
+                >
+                  <i
+                    class="w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors"
+                    data-lucide="map"
+                  ></i>
                 </div>
-                <span class="text-lg font-medium group-hover:text-white transition-colors">CyberFusion MAP</span>
+                <span
+                  class="text-lg font-medium group-hover:text-white transition-colors"
+                  >CyberFusion MAP</span
+                >
               </div>
-              <i class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors" data-lucide="chevron-right"></i>
+              <i
+                class="w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors"
+                data-lucide="chevron-right"
+              ></i>
             </button>
           </div>
 
           <!-- Connector Column (Visual Dashed Lines) -->
           <div class="hidden lg:block lg:col-span-2 h-[400px] z-10 relative">
-            <svg class="w-full h-full absolute inset-0 overflow-visible" preserveAspectRatio="none" viewBox="0 0 200 400">
+            <svg
+              class="w-full h-full absolute inset-0 overflow-visible"
+              preserveAspectRatio="none"
+              viewBox="0 0 200 400"
+            >
               <!-- Active path: Center (Top) -->
-              <path class="animate-flow-purple" d="M-50 80 C 80 80, 80 200, 180 200 L 240 200" fill="none" id="path-center" stroke="#a855f7" stroke-dasharray="8 8" stroke-width="2"></path>
+              <path
+                class="animate-flow-purple"
+                d="M-50 80 C 80 80, 80 200, 180 200 L 240 200"
+                fill="none"
+                id="path-center"
+                stroke="#a855f7"
+                stroke-dasharray="8 8"
+                stroke-width="2"
+              ></path>
               <!-- Inactive paths -->
-              <path class="opacity-20" d="M-50 160 C 80 160, 80 200, 180 200 L 240 200" fill="none" id="path-firewall" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
-              <path class="opacity-20" d="M-50 240 C 80 240, 80 200, 180 200 L 240 200" fill="none" id="path-network" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
-              <path class="opacity-20" d="M-50 320 C 80 320, 80 200, 180 200 L 240 200" fill="none" id="path-map" stroke="#525252" stroke-dasharray="6 6" stroke-width="2"></path>
+              <path
+                class="opacity-20"
+                d="M-50 160 C 80 160, 80 200, 180 200 L 240 200"
+                fill="none"
+                id="path-firewall"
+                stroke="#525252"
+                stroke-dasharray="6 6"
+                stroke-width="2"
+              ></path>
+              <path
+                class="opacity-20"
+                d="M-50 240 C 80 240, 80 200, 180 200 L 240 200"
+                fill="none"
+                id="path-network"
+                stroke="#525252"
+                stroke-dasharray="6 6"
+                stroke-width="2"
+              ></path>
+              <path
+                class="opacity-20"
+                d="M-50 320 C 80 320, 80 200, 180 200 L 240 200"
+                fill="none"
+                id="path-map"
+                stroke="#525252"
+                stroke-dasharray="6 6"
+                stroke-width="2"
+              ></path>
               <!-- Active Arrowhead -->
-              <path d="M230 195 L 240 200 L 230 205" fill="none" stroke="#a855f7" stroke-width="2"></path>
+              <path
+                d="M230 195 L 240 200 L 230 205"
+                fill="none"
+                stroke="#a855f7"
+                stroke-width="2"
+              ></path>
               <circle cx="240" cy="200" fill="#a855f7" r="3"></circle>
             </svg>
           </div>
 
           <!-- Right Side: Details Card -->
           <div class="lg:col-span-5 relative">
-            <div class="relative w-full bg-neutral-900 rounded-[24px] p-[1px] overflow-hidden group">
+            <div
+              class="relative w-full bg-neutral-900 rounded-[24px] p-[1px] overflow-hidden group"
+            >
               <!-- Glowing Border Gradient -->
-              <div class="absolute inset-0 bg-gradient-to-b from-purple-500 via-purple-600/50 to-transparent opacity-80 z-0"></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-purple-500 via-purple-600/50 to-transparent opacity-80 z-0"
+              ></div>
 
               <!-- Inner Card Content -->
-              <div class="relative z-10 bg-neutral-950 rounded-[23px] p-8 lg:p-10 flex flex-col">
+              <div
+                class="relative z-10 bg-neutral-950 rounded-[23px] p-8 lg:p-10 flex flex-col"
+              >
                 <!-- Background Glow -->
-                <div class="absolute top-0 right-0 w-full h-40 bg-gradient-to-b from-purple-500/10 to-transparent pointer-events-none rounded-t-[23px]"></div>
+                <div
+                  class="absolute top-0 right-0 w-full h-40 bg-gradient-to-b from-purple-500/10 to-transparent pointer-events-none rounded-t-[23px]"
+                ></div>
 
                 <!-- Card Header -->
-                <div class="flex items-center justify-between mb-4 relative z-10">
+                <div
+                  class="flex items-center justify-between mb-4 relative z-10"
+                >
                   <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center" id="module-icon-container">
-                      <i class="w-6 h-6 text-purple-400" data-lucide="shield-check" id="module-icon"></i>
+                    <div
+                      class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center"
+                      id="module-icon-container"
+                    >
+                      <i
+                        class="w-6 h-6 text-purple-400"
+                        data-lucide="shield-check"
+                        id="module-icon"
+                      ></i>
                     </div>
-                    <h3 class="text-2xl font-medium text-white" id="module-title">CyberFusion Center</h3>
+                    <h3
+                      class="text-2xl font-medium text-white"
+                      id="module-title"
+                    >
+                      CyberFusion Center
+                    </h3>
                   </div>
                 </div>
 
                 <!-- Subtitle -->
-                <p class="text-neutral-400 mb-8 text-sm leading-relaxed relative z-10" id="module-desc">
-                  SIEM, EDR, XDR e SOAR com IA e LLM para análises inteligentes e previsão de comportamento.
+                <p
+                  class="text-neutral-400 mb-8 text-sm leading-relaxed relative z-10"
+                  id="module-desc"
+                >
+                  SIEM, EDR, XDR e SOAR com IA e LLM para análises inteligentes
+                  e previsão de comportamento.
                 </p>
 
                 <!-- Features List -->
                 <div class="space-y-4 mb-8 relative z-10" id="module-features">
                   <div class="flex items-center gap-3 group/item">
-                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    <div
+                      class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i
+                        class="w-3 h-3 text-purple-400"
+                        data-lucide="check"
+                      ></i>
                     </div>
-                    <span class="text-white text-sm">Detecção avançada com Machine Learning</span>
+                    <span class="text-white text-sm"
+                      >Detecção avançada com Machine Learning</span
+                    >
                   </div>
                   <div class="flex items-center gap-3 group/item">
-                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    <div
+                      class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i
+                        class="w-3 h-3 text-purple-400"
+                        data-lucide="check"
+                      ></i>
                     </div>
-                    <span class="text-white text-sm">Correlação de eventos em tempo real</span>
+                    <span class="text-white text-sm"
+                      >Correlação de eventos em tempo real</span
+                    >
                   </div>
                   <div class="flex items-center gap-3 group/item">
-                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    <div
+                      class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i
+                        class="w-3 h-3 text-purple-400"
+                        data-lucide="check"
+                      ></i>
                     </div>
-                    <span class="text-white text-sm">Resposta automatizada a incidentes</span>
+                    <span class="text-white text-sm"
+                      >Resposta automatizada a incidentes</span
+                    >
                   </div>
                   <div class="flex items-center gap-3 group/item">
-                    <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                      <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
+                    <div
+                      class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0"
+                    >
+                      <i
+                        class="w-3 h-3 text-purple-400"
+                        data-lucide="check"
+                      ></i>
                     </div>
-                    <span class="text-white text-sm">Dashboard unificado de segurança</span>
+                    <span class="text-white text-sm"
+                      >Dashboard unificado de segurança</span
+                    >
                   </div>
                 </div>
 
@@ -817,8 +1088,12 @@
                   class="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-transparent py-3 px-6 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.4)] w-full"
                   style="--spread: 90deg; --shimmer-color: #a855f7; --speed: 3s"
                 >
-                  <div class="absolute inset-0 -z-20 overflow-hidden rounded-full">
-                    <div class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]">
+                  <div
+                    class="absolute inset-0 -z-20 overflow-hidden rounded-full"
+                  >
+                    <div
+                      class="absolute inset-[-100%] w-[300%] h-[300%] animate-[spin-beam_3s_linear_infinite]"
+                    >
                       <div
                         class="absolute inset-0"
                         style="
@@ -832,7 +1107,9 @@
                       ></div>
                     </div>
                   </div>
-                  <div class="absolute inset-[1px] -z-10 bg-neutral-950 rounded-full transition-colors duration-300 group-hover:bg-purple-950/50"></div>
+                  <div
+                    class="absolute inset-[1px] -z-10 bg-neutral-950 rounded-full transition-colors duration-300 group-hover:bg-purple-950/50"
+                  ></div>
                   <span id="module-cta-text">Conhecer o Center</span>
                   <i class="w-4 h-4" data-lucide="arrow-right"></i>
                 </a>
@@ -843,7 +1120,7 @@
       </div>
 
       <script>
-        (function() {
+        (function () {
           const modules = {
             center: {
               title: "CyberFusion Center",
@@ -853,9 +1130,9 @@
                 "Detecção avançada com Machine Learning",
                 "Correlação de eventos em tempo real",
                 "Resposta automatizada a incidentes",
-                "Dashboard unificado de segurança"
+                "Dashboard unificado de segurança",
               ],
-              cta: "Conhecer o Center"
+              cta: "Conhecer o Center",
             },
             firewall: {
               title: "CyberFusion Firewall",
@@ -865,9 +1142,9 @@
                 "Proteção de perímetro avançada",
                 "IDS/IPS integrado",
                 "VPN site-to-site e client-to-site",
-                "Regras dinâmicas baseadas em IA"
+                "Regras dinâmicas baseadas em IA",
               ],
-              cta: "Conhecer o Firewall"
+              cta: "Conhecer o Firewall",
             },
             network: {
               title: "CyberFusion Network Monitor",
@@ -877,9 +1154,9 @@
                 "Monitoramento de rede 24/7",
                 "Análise de tráfego em tempo real",
                 "Alertas preditivos com IA",
-                "Relatórios detalhados de performance"
+                "Relatórios detalhados de performance",
               ],
-              cta: "Conhecer o Monitor"
+              cta: "Conhecer o Monitor",
             },
             map: {
               title: "CyberFusion MAP",
@@ -889,296 +1166,299 @@
                 "Mapeamento de superfície de ataque",
                 "Threat Intelligence em tempo real",
                 "Detecção de vazamentos de dados",
-                "Monitoramento da Dark Web"
+                "Monitoramento da Dark Web",
               ],
-              cta: "Conhecer o MAP"
-            }
+              cta: "Conhecer o MAP",
+            },
           };
 
-          const activeBtnClass = "module-btn active w-full flex items-center justify-between p-5 rounded-xl border text-white group";
-          const inactiveBtnClass = "module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group";
+          const activeBtnClass =
+            "module-btn active w-full flex items-center justify-between p-5 rounded-xl border text-white group";
+          const inactiveBtnClass =
+            "module-btn w-full flex items-center justify-between p-5 rounded-xl bg-neutral-900/50 border border-neutral-800 text-neutral-200 group";
 
-          window.selectModule = function(moduleKey) {
+          window.selectModule = function (moduleKey) {
             // Update buttons
-            ['center', 'firewall', 'network', 'map'].forEach(key => {
-              const btn = document.getElementById('btn-' + key);
-              const iconContainer = btn.querySelector('.w-10');
-              const icon = iconContainer.querySelector('[data-lucide]');
-              const text = btn.querySelector('span');
-              const chevron = btn.querySelectorAll('[data-lucide]')[1];
+            ["center", "firewall", "network", "map"].forEach((key) => {
+              const btn = document.getElementById("btn-" + key);
+              const iconContainer = btn.querySelector(".w-10");
+              const icon = iconContainer.querySelector("[data-lucide]");
+              const text = btn.querySelector("span");
+              const chevron = btn.querySelectorAll("[data-lucide]")[1];
 
               if (key === moduleKey) {
                 btn.className = activeBtnClass;
-                iconContainer.className = "w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center";
+                iconContainer.className =
+                  "w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center";
                 icon.className = "w-5 h-5 text-purple-400";
                 text.className = "text-lg font-medium";
                 chevron.className = "w-5 h-5 text-purple-400";
 
                 // Move dot
-                const dot = document.getElementById('module-active-dot');
+                const dot = document.getElementById("module-active-dot");
                 btn.appendChild(dot);
               } else {
                 btn.className = inactiveBtnClass;
-                iconContainer.className = "w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors";
-                icon.className = "w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors";
-                text.className = "text-lg font-medium group-hover:text-white transition-colors";
-                chevron.className = "w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors";
+                iconContainer.className =
+                  "w-10 h-10 rounded-lg bg-neutral-800 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors";
+                icon.className =
+                  "w-5 h-5 text-neutral-400 group-hover:text-purple-400 transition-colors";
+                text.className =
+                  "text-lg font-medium group-hover:text-white transition-colors";
+                chevron.className =
+                  "w-5 h-5 text-neutral-600 group-hover:text-purple-400 transition-colors";
               }
             });
 
             // Update paths
-            ['center', 'firewall', 'network', 'map'].forEach(key => {
-              const path = document.getElementById('path-' + key);
+            ["center", "firewall", "network", "map"].forEach((key) => {
+              const path = document.getElementById("path-" + key);
               if (key === moduleKey) {
-                path.setAttribute('stroke', '#a855f7');
-                path.setAttribute('class', 'animate-flow-purple');
-                path.setAttribute('stroke-dasharray', '8 8');
+                path.setAttribute("stroke", "#a855f7");
+                path.setAttribute("class", "animate-flow-purple");
+                path.setAttribute("stroke-dasharray", "8 8");
               } else {
-                path.setAttribute('stroke', '#525252');
-                path.setAttribute('class', 'opacity-20');
-                path.setAttribute('stroke-dasharray', '6 6');
+                path.setAttribute("stroke", "#525252");
+                path.setAttribute("class", "opacity-20");
+                path.setAttribute("stroke-dasharray", "6 6");
               }
             });
 
             // Update card content
             const data = modules[moduleKey];
-            const titleEl = document.getElementById('module-title');
-            const descEl = document.getElementById('module-desc');
-            const featuresEl = document.getElementById('module-features');
-            const ctaEl = document.getElementById('module-cta-text');
+            const titleEl = document.getElementById("module-title");
+            const descEl = document.getElementById("module-desc");
+            const featuresEl = document.getElementById("module-features");
+            const ctaEl = document.getElementById("module-cta-text");
 
             // Fade effect
             const elements = [titleEl, descEl, featuresEl, ctaEl];
-            elements.forEach(el => {
-              el.style.opacity = '0';
-              el.style.transition = 'opacity 0.2s ease';
+            elements.forEach((el) => {
+              el.style.opacity = "0";
+              el.style.transition = "opacity 0.2s ease";
             });
 
             setTimeout(() => {
               titleEl.textContent = data.title;
               descEl.textContent = data.desc;
 
-              featuresEl.innerHTML = data.features.map(feat => `
+              featuresEl.innerHTML = data.features
+                .map(
+                  (feat) => `
                 <div class="flex items-center gap-3 group/item">
                   <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
                     <i class="w-3 h-3 text-purple-400" data-lucide="check"></i>
                   </div>
                   <span class="text-white text-sm">${feat}</span>
                 </div>
-              `).join('');
+              `,
+                )
+                .join("");
 
               ctaEl.textContent = data.cta;
 
               // Re-init lucide icons
               lucide.createIcons();
 
-              elements.forEach(el => el.style.opacity = '1');
+              elements.forEach((el) => (el.style.opacity = "1"));
             }, 200);
-          }
+          };
         })();
       </script>
     </section>
 
     <!-- Testimonials Marquee -->
-    <section class="py-20 overflow-hidden relative">
+    <section class="py-20 overflow-hidden relative" id="parceiros">
       <div class="max-w-7xl mx-auto px-6 mb-12">
         <h2
           class="text-3xl font-medium text-white tracking-tight text-center animate-on-scroll"
         >
-          Clientes
+          Parceiros
         </h2>
       </div>
       <div class="relative w-full marquee-mask">
-        <div class="flex marquee-content w-max gap-6 pb-4">
-          <!-- Card Item Template -->
+        <div class="flex marquee-content w-max gap-8 pb-4 items-center">
+          <!-- Parceiros -->
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "This platform completely changed how we deploy our frontend. The
-              speed is unmatched."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                A
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Alex Rivera</div>
-                <div class="text-neutral-500 text-[10px]">CTO at Startup</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/logo-hex360-colorida-B6GoJ1tN.png"
+              alt="Hex360"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "The attention to detail in the UI components is fantastic. It
-              feels native."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                S
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Sarah Chen</div>
-                <div class="text-neutral-500 text-[10px]">Frontend Lead</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/Captura de tela 2026-01-14 160929.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Integration was a breeze. We had the analytics dashboard running
-              in 10 minutes."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                M
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Mike Johnson</div>
-                <div class="text-neutral-500 text-[10px]">DevOps Engineer</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/IRONFENCE-LOGO-SECUNDARIA.png"
+              alt="IronFence"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Simply the best developer experience I've had in years. Highly
-              recommended."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                J
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Jessica Wu</div>
-                <div class="text-neutral-500 text-[10px]">Full Stack Dev</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/image.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Documentation is clear, API is robust. It just works."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                D
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">David Kim</div>
-                <div class="text-neutral-500 text-[10px]">Product Owner</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/Logotipo-Ikhon-branco.png"
+              alt="Ikhon"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/img-compartilhamento.jpg"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/nivati_logo.jpg"
+              alt="Nivati"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/Assinatura-de-Marca-Exxata-03.png"
+              alt="Exxata"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/Logotipo-Ikhon-padrao.png"
+              alt="Ikhon"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/baixados.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <!-- Duplicates for Loop -->
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "This platform completely changed how we deploy our frontend. The
-              speed is unmatched."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                A
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Alex Rivera</div>
-                <div class="text-neutral-500 text-[10px]">CTO at Startup</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/logo-hex360-colorida-B6GoJ1tN.png"
+              alt="Hex360"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "The attention to detail in the UI components is fantastic. It
-              feels native."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                S
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Sarah Chen</div>
-                <div class="text-neutral-500 text-[10px]">Frontend Lead</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/Captura de tela 2026-01-14 160929.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Integration was a breeze. We had the analytics dashboard running
-              in 10 minutes."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                M
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Mike Johnson</div>
-                <div class="text-neutral-500 text-[10px]">DevOps Engineer</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/IRONFENCE-LOGO-SECUNDARIA.png"
+              alt="IronFence"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Simply the best developer experience I've had in years. Highly
-              recommended."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                J
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">Jessica Wu</div>
-                <div class="text-neutral-500 text-[10px]">Full Stack Dev</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/image.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
           <div
-            class="w-80 p-6 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0"
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
           >
-            <p class="text-neutral-300 text-sm mb-4 leading-relaxed">
-              "Documentation is clear, API is robust. It just works."
-            </p>
-            <div class="flex items-center gap-3">
-              <div
-                class="w-8 h-8 bg-neutral-700 rounded-full flex items-center justify-center text-xs text-white font-medium"
-              >
-                D
-              </div>
-              <div>
-                <div class="text-white text-xs font-medium">David Kim</div>
-                <div class="text-neutral-500 text-[10px]">Product Owner</div>
-              </div>
-            </div>
+            <img
+              src="assets/parceiros/Logotipo-Ikhon-branco.png"
+              alt="Ikhon"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/img-compartilhamento.jpg"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/nivati_logo.jpg"
+              alt="Nivati"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/Assinatura-de-Marca-Exxata-03.png"
+              alt="Exxata"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/Logotipo-Ikhon-padrao.png"
+              alt="Ikhon"
+              class="h-full w-auto object-contain"
+            />
+          </div>
+          <div
+            class="h-24 bg-neutral-900/50 border border-neutral-800 rounded-xl flex-shrink-0 overflow-hidden"
+          >
+            <img
+              src="assets/parceiros/baixados.png"
+              alt="Parceiro"
+              class="h-full w-auto object-contain"
+            />
           </div>
         </div>
       </div>
@@ -1189,9 +1469,7 @@
       <div
         class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"
       >
-        <div class="text-sm text-neutral-500" id="year">
-          
-        </div>
+        <div class="text-sm text-neutral-500" id="year"></div>
         <div class="flex gap-6 text-sm text-neutral-500">
           <a class="hover:text-white transition-colors" href="#">Privacy</a>
           <a class="hover:text-white transition-colors" href="#">Terms</a>
@@ -1210,12 +1488,17 @@
       aria-label="Fale conosco pelo WhatsApp"
     >
       <svg class="w-7 h-7 text-white fill-current" viewBox="0 0 24 24">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        />
       </svg>
     </a>
 
     <script>
-      document.getElementById("year").innerHTML = "© " + new Date().getFullYear() + " Deep Defense. Todos os direitos reservados.";
+      document.getElementById("year").innerHTML =
+        "© " +
+        new Date().getFullYear() +
+        " Deep Defense. Todos os direitos reservados.";
       // Initialize Lucide Icons
       lucide.createIcons();
 
