@@ -1600,15 +1600,15 @@
           if (index === currentCard) {
             btn.classList.add("bg-neutral-900", "border-neutral-800");
             btn.classList.remove("border-transparent");
-            btn.querySelector("i").classList.remove("text-neutral-400");
-            btn.querySelector("i").classList.add("text-white");
+            btn.querySelector("i, svg").classList.remove("text-neutral-400");
+            btn.querySelector("i, svg").classList.add("text-white");
             btn.querySelector("h3").classList.remove("text-neutral-300");
             btn.querySelector("h3").classList.add("text-white");
           } else {
             btn.classList.remove("bg-neutral-900", "border-neutral-800");
             btn.classList.add("border-transparent");
-            btn.querySelector("i").classList.add("text-neutral-400");
-            btn.querySelector("i").classList.remove("text-white");
+            btn.querySelector("i, svg").classList.add("text-neutral-400");
+            btn.querySelector("i, svg").classList.remove("text-white");
             btn.querySelector("h3").classList.add("text-neutral-300");
             btn.querySelector("h3").classList.remove("text-white");
           }
